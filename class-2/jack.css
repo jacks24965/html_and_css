@@ -1,0 +1,26 @@
+a {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+	
+	/*
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px; */
+    padding: 10px 20px;
+	
+    border-radius: 10px;
+	border: 2px solid #c00993;
+}
+
+a:hover {
+	background-color: yellow;
+	color: black;
+	
+}
+
+p {
+    width: 400px;
+	text-align:justify;
+}
