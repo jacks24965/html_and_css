@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Jacks</title>
+	 <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+	</style>
+	</head>
+	<body>
+	<div class="box">
+    <h1>Choose your Favorite Color</h1>
+
+    <label for="color">Select a color:</label>
+
+    <select id="jacks">
+      <option value="">-- Choose --</option>
+      <option value="blue">Red</option>
+      <option value="blue" disabled>Blue</option>
+      <option value="green">Green</option>
+      <option value="purple">Purple</option>
+	  
+    </select>
+	  <p id="result">Your Favorite color will appear here.</p>
+	  </div>
+	<script>
+	let dropdown = document.getElementById("jacks")
+	let result = document.getElementById("result");
+	
+	dropdown.addEventListener("change", ()=> {
+	
+	let Toufik = dropdown.value;
+	
+      if (Toufik === "") {
+        result.textContent = "Please choose a color.";
+        result.style.color = "black";
+      } else {
+        result.textContent = "You Took: " + Toufik;
+        result.style.color = Toufik;
+      }
+	
+	
+	
+	
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	</body>
+</html>

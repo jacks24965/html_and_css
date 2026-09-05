@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Dropdown</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+	
+	#result00
+	{
+		color: #2774a1;
+		font-size: 24px;
+		font-family: serif;
+		font-weight: 700;
+	}
+	
+	
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Choose a Color</h1>
+
+    <label for="color">Select a color:</label>
+
+    <select id="color">
+      <option value="">-- Choose --</option>
+      <option value="red">Red</option>
+      <option value="blue" disabled>Blue</option>
+      <option value="green" selected>Green</option>
+      <option value="purple">Purple</option>
+	  
+    </select>
+
+    <p id="result">Your color will appear here.</p>
+  </div>
+
+  <script>
+    let result = document.getElementById("result");
+	
+	result.style.color = "red";
+	
+	
+	
+	
+  </script>
+
+</body>
+</html>

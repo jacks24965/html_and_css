@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Dropdown</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Choose a Color</h1>
+
+    <label for="color">Select a color:</label>
+
+    <select id="jack">
+      <option value="">-- Choose --</option>
+      <option value="blue">Red</option>
+      <option value="blue" disabled>Blue</option>
+      <option value="green">Green</option>
+      <option value="purple">Purple</option>
+	  
+    </select>
+
+    <p id="result">Your color will appear here.</p>
+  </div>
+
+  <script>
+    const dropdown = document.getElementById("jack");
+    const result = document.getElementById("result");
+
+    dropdown.addEventListener("change", () => {
+	
+	      const jahin = dropdown.value;
+
+      if (jahin === "") {
+        result.textContent = "Please choose a color.";
+        result.style.color = "black";
+      } else {
+        result.textContent = "Tumi necho: " + jahin;
+        result.style.color = jahin;
+      }
+	
+	
+	
+	
+	});
+  </script>
+
+</body>
+</html>
