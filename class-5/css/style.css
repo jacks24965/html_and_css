@@ -1,0 +1,139 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff !important;
+}
+
+/* Navigation Menu */
+.nav {
+    padding: 10px 20px;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 ;
+}
+
+/*  ================================
+Video Style 
+====================================
+*/
+
+.sec-title {
+    color: #2d2a16;
+    font-size: 36px;
+}
+
+
+p.jack {
+	text-align:justify;
+	
+}
+
+
+
+
+
+/*  ================================
+Footer Style 
+====================================
+*/
+.site-footer {
+    position: relative;
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* Dark transparent layer */
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+/* Keep content above overlay */
+.site-footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer headings */
+.site-footer h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.site-footer h5:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+
+/* Paragraph text */
+.site-footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Links */
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.site-footer ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.site-footer ul li a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Copyright */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .site-footer {
+        text-align: center;
+    }
+
+    .site-footer h5:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
